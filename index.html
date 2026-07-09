@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shehla Amir</title>
+<style>
+  :root{
+    --bg:#0d1117;
+    --bg-alt:#161b22;
+    --border:#30363d;
+    --text:#c9d1d9;
+    --text-dim:#8b949e;
+    --accent:#58a6ff;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    line-height:1.6;
+  }
+  .wrap{max-width:800px;margin:0 auto;padding:0 24px;}
+  header{
+    padding:64px 0 32px;
+    border-bottom:1px solid var(--border);
+  }
+  header h1{font-size:2rem;font-weight:600;color:#fff;}
+  header p.tagline{color:var(--text-dim);margin-top:6px;font-size:1.05rem;}
+  nav{margin-top:20px;}
+  nav a{
+    color:var(--accent);
+    text-decoration:none;
+    margin-right:18px;
+    font-size:0.95rem;
+  }
+  nav a:hover{text-decoration:underline;}
+  section{padding:40px 0;border-bottom:1px solid var(--border);}
+  section:last-of-type{border-bottom:none;}
+  h2{
+    font-size:1.3rem;
+    color:#fff;
+    margin-bottom:16px;
+    display:flex;align-items:center;gap:8px;
+  }
+  h2::before{content:"";width:4px;height:1.1em;background:var(--accent);display:inline-block;border-radius:2px;}
+  .placeholder{
+    color:var(--text-dim);
+    font-style:italic;
+    font-size:0.92rem;
+    border:1px dashed var(--border);
+    padding:10px 14px;
+    border-radius:6px;
+    margin-top:8px;
+  }
+  .card-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+    gap:16px;
+    margin-top:12px;
+  }
+  .card{
+    background:var(--bg-alt);
+    border:1px solid var(--border);
+    border-radius:8px;
+    padding:16px;
+  }
+  .card h3{font-size:1rem;color:#fff;margin-bottom:6px;}
+  .card p{font-size:0.88rem;color:var(--text-dim);}
+  .tag-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;}
+  .tag{
+    background:var(--bg-alt);
+    border:1px solid var(--border);
+    color:var(--text-dim);
+    font-size:0.8rem;
+    padding:4px 10px;
+    border-radius:12px;
+  }
+  ul.pub-list{list-style:none;margin-top:8px;}
+  ul.pub-list li{
+    padding:10px 0;
+    border-bottom:1px solid var(--border);
+    font-size:0.92rem;
+    color:var(--text-dim);
+  }
+  ul.pub-list li:last-child{border-bottom:none;}
+  .contact-links a{
+    color:var(--accent);
+    text-decoration:none;
+    margin-right:16px;
+  }
+  .contact-links a:hover{text-decoration:underline;}
+  footer{
+    padding:32px 0 64px;
+    color:var(--text-dim);
+    font-size:0.85rem;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Shehla Amir</h1>
+    <p class="tagline"><!-- ASSUMPTION: placeholder tagline, edit to match your focus --> Wireless & Optical Communication Systems · MATLAB</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#publications">Publications</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p class="placeholder">
+      2–3 sentence bio: current program/role, institution, and what you work on
+      (e.g. "Graduate researcher at NC State working on [X] in wireless/optical
+      communication systems, using MATLAB for [Y]"). Replace this block.
+    </p>
+  </section>
+
+  <section id="research">
+    <h2>Research Interests</h2>
+    <div class="tag-list">
+      <span class="tag">Wireless Communications</span>
+      <span class="tag">Optical Communications</span>
+      <span class="tag">Signal Processing</span>
+      <span class="tag">MATLAB Simulation</span>
+      <!-- ASSUMPTION: replace/add tags for your actual subareas, e.g. FSO, RF front-end, channel modeling -->
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Project Name</h3>
+        <p>One-line description of the MATLAB project and its result. Link to repo.</p>
+      </div>
+      <div class="card">
+        <h3>Project Name</h3>
+        <p>One-line description of the MATLAB project and its result. Link to repo.</p>
+      </div>
+      <div class="card">
+        <h3>Project Name</h3>
+        <p>One-line description of the MATLAB project and its result. Link to repo.</p>
+      </div>
+    </div>
+    <p class="placeholder">Replace these three cards with your actual repos (title, 1-line summary, link).</p>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+    <ul class="pub-list">
+      <li>Author list, "Paper title," Venue, Year. — placeholder, remove if none yet</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="tag-list">
+      <span class="tag">MATLAB</span>
+      <span class="tag">Simulink</span>
+      <span class="tag">Signal Processing</span>
+      <span class="tag">Python</span>
+      <!-- ASSUMPTION: adjust to your actual toolset -->
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-links">
+      <a href="mailto:samir2@ncsu.edu">Email</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Google Scholar</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 Shehla Amir
+  </footer>
+
+</div>
+</body>
+</html>
