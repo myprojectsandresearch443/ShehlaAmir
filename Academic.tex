@@ -1,0 +1,353 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\rmdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+%\usepackage[scale=0.8]{geometry}
+ \usepackage[left=2cm, right=2cm, top=1.7cm]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvheadnamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+
+% personal data
+\name{Shehla}{Amir}
+
+%\address{28, Rue Marcelin Berthelot, 92120 - Montrouge - France}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+1(984)2688580}      % optional, remove / comment the line if not wanted
+%\phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+
+\email{samir2@ncsu.edu} % optional, remove / comment the line if not wanted
+
+\homepage{https://www.linkedin.com/in/shehla-amir/}
+% optional, remove / comment the line if not wanted
+\extrainfo{\textbf{Research Interests}: Radio-over-Fiber, MIMO Signal Processing,\\ Optical/Wireless Convergence, Joint Communication \& Radar, Information Theory\\ \href{https://scholar.google.com/citations?user=LJrqYAgAAAAJ&hl=en}{Google Scholar}}
+
+                % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\vspace{-45pt}
+
+\section{Education}
+
+\vspace{4pt}
+\cventry{Jan 2022 -- Dec 2026 (expected)}{PhD in Electrical Engineering}{North Carolina State University}{Raleigh, North Carolina}{}{\vspace{2pt}
+\textbf{Advisor:} Prof. Robert W. Heath Jr.\\
+\textbf{Relevant Courses:} \textit{Space-time communication theory, Signal processing and deep learning for advanced MIMO systems, LTE and 5G communications, Wireless Communications, Internet Protocols, Electromagnetic Fields, RF Design for wireless, Detection and Estimation theory, Photonics, Optical communications, Information
+theory}
+}
+
+\cventry{2026}{MS in Electrical Engineering}{North Carolina State University}{Raleigh, North Carolina}{}{}
+
+\cventry{Jul 2021}{Bachelor of Science in Electrical Engineering}{Lahore University of Management Sciences}{Lahore, Pakistan}{}{\vspace{2pt}
+\textbf{Awards:} Dean's Honor List 2018, 2019, 2020\\
+\textbf{Relevant Courses:} \textit{Electromagnetic Field and Waves, Communication systems, Computer Networks, Deep Learning, Digital Signal Processing, Principles of Optics, Stochastic systems, Advance Digital Signal Processing, Power Electronics}
+}
+
+
+\section{Skills}
+
+\textbf{Research: } Wireless Communications, Radio-over-Fiber, MIMO Signal Processing, Optical/Wireless Convergence, Joint Communication \& Radar, Information Theory\\
+\textbf{High-Level Languages: } C, C++, Python\\
+\textbf{Algorithm Development: } MATLAB\\
+\textbf{Design and Simulation Tools: }LTspice, Proteus, Cadence AWR, HFSS, Quadriga, USRPs (SDR)\\
+\textbf{Technical Tools: }MikroC, MPLAB, Adobe Photoshop, Wireshark
+
+
+\section{Experience}
+
+\cventry{Jan 2022 -- Present}{North Carolina State University}{Graduate Research Assistant}{}{}{}
+\textbf{Supervisor:} Prof. Robert W. Heath Jr.
+\begin{itemize}
+    \item Combining optical communication theory with wireless communication for future radio access networks
+    \item Using signal processing techniques to design efficient optical/wireless MIMO systems
+    \item Prior work on joint communication and radar for multi-node radar systems
+\end{itemize}
+
+\cventry{May 2023 -- Aug 2023}{Qorvo}{Research \& Development Engineering Intern}{Apopka, FL}{}{}
+\textbf{Supervisor:} Dr. Mark Gallagher
+\begin{itemize}
+    \item Understanding the working principles of surface acoustic waves for RF circuit design
+    \item Automated the COM model vs. measurement analysis for surface acoustic wave (SAW) filters
+    \item Streamlined the SAW filter design flow in Cadence AWR/HFSS using the pyawr library
+\end{itemize}
+
+\cventry{Jun 2021 -- Nov 2021}{Lahore University of Management Sciences}{Research Assistant}{Energy Storage Systems}{}{}
+\textbf{Supervisor:} Dr. Ijaz Haider Naqvi
+\begin{itemize}
+    \item Data-driven estimation of remaining useful life (RUL) of Li-ion batteries
+    \item Equivalent circuit modeling to estimate battery state-of-health (SOH)
+\end{itemize}
+
+
+\section{Teaching Experience}
+\cventry{}{North Carolina State University}{Teaching Assistant}{}{}{}
+\textbf{Responsibilities:} Supported instructor in grading exams and labs. Assisted students in performing the labs and held weekly office hours for any detailed help required.
+\begin{enumerate}
+    \item ECE 200: Introduction to Signals, Circuits and Systems \textit{(Summer 2026)}
+    \item ECE 211: Electric Circuits \textit{(Spring 2025, Spring 2026)}
+    \item ECE 220: Analytical Foundations of ECE \textit{(Fall 2024, Spring 2026)}
+    \item ECE 302: Microelectronics \textit{(Fall 2025)}
+    \item ECE 331: Principles of Electrical Engineering \textit{(Summer 2026)}
+\end{enumerate}
+
+\cventry{}{Lahore University of Management Sciences}{Teaching Assistant}{}{}{}
+\textbf{Responsibilities:} Supported instructor in grading assignments, quizzes, labs and vivas. Assisted students in performing the lab experiments and held weekly office hours and tutorials for any detailed help required.
+\begin{enumerate}
+    \item EE 220: Digital Logic Circuits \textit{(Spring 2020, Spring 2021)}
+    \item EE 330: Electromagnetic Fields and Waves \textit{(Fall 2020)}
+    \item EE 380: Communication Systems \textit{(Fall 2020)}
+\end{enumerate}
+
+
+\section{Research Projects}
+
+\vspace{4pt}
+
+\cventry{Sept 2024 -- Ongoing}{MIMO aided by Radio-over-Multi-Mode Fiber (A-RoMMF)}{}{}{}{
+\textit{Supervisor: }Prof. Robert W. Heath Jr. · with Dr. Miguel Rodrigo Castellanos\\
+\textit{Motivation: }Multi-mode fiber (MMF) spatially multiplexes signals over parallel optical modes, giving analog radio-over-fiber (A-RoF) a way to carry MIMO spatial streams over a single-wavelength fronthaul link without the added wavelength or per-core hardware overhead that wavelength-division-multiplexed single-mode fiber (SMF/WDM) requires. Since MMF mode-coupling strength changes how dispersion, nonlinear interference, and achievable capacity behave, this project develops closed-form models across both the strong- and weak-mode-coupling regimes so A-RoMMF performance can be predicted and compared to SMF/WDM without relying solely on measurement campaigns.\\
+\textit{Work: }
+\begin{itemize}
+    \item Modeled the uplink A-RoMMF link as a cascaded wireless--optical MIMO channel that jointly captures wireless fading, fiber mode coupling, amplification (ASE) noise, and nonlinear interference, rather than treating the wireless and optical hops in isolation
+    \item Under the strong-mode-coupling regime (SCR), compared MMF-aided A-RoF against WDM-aided A-RoF over SMF, showing MMF reduces nonlinear interference and supports higher data rates, limited mainly by the number of optical modes and wireless channels
+    \item Under the weak-mode-coupling regime (WCR), derived a closed-form ergodic spectral efficiency (with low- and high-SNR approximations) and, via a Mellin-transform approach, the first closed-form outage probability for a cascaded wireless--MMF channel
+    \item Characterized mode-dependent nonlinear interference covariance under WCR, showing A-RoMMF tolerates launch powers beyond 40~dBm before nonlinear penalties -- well past the normal SMF operating region -- while achieving spectral efficiency comparable to WDM/SMF
+    \item Showed that for a representative configuration (12 receive antennas, 20~km analog fronthaul, 10~bits/s/Hz target rate) the cascaded channel preserves the full wireless diversity order, with the wireless hop -- not the fiber -- as the primary performance bottleneck
+\end{itemize}
+\textit{Related Publications: }
+\begin{itemize}
+    \item [C1] "Analog radio-over-multimode fiber: A spectral efficiency perspective," Proc. IEEE ICC, Montreal, QC, Canada, Jun. 2025 (strong mode-coupling regime)
+    \item [J1] "Performance analysis of uplink analog radio-over-multimode fiber," submitted to IEEE Open J. Commun. Soc., 2026 (weak mode-coupling regime)
+\end{itemize}
+}
+
+\cventry{2025 -- Ongoing}{Cell-Free Massive MIMO Aided by Analog Radio-over-Multimode Fiber}{}{}{}{
+\textit{Supervisor: }Prof. Robert W. Heath Jr.\\
+\textit{Motivation: }In a cell-free massive MIMO deployment, distributed remote radio heads (RRHs) jointly serve users and forward signals to a central unit over fronthaul links, so fronthaul architecture directly shapes achievable per-user performance. This project evaluates whether centralized analog radio-over-multimode-fiber (A-RoMMF) fronthaul -- where each RRH connects to the central unit over multimode fiber -- can approach the performance of an ideal, lossless fronthaul link in a multi-RRH, multi-user cell-free system.\\
+\textit{Work: }
+\begin{itemize}
+    \item Modeled a cell-free MIMO network with multiple RRHs connected to a central unit over multimode fiber, combining A-RoMMF with WDM for the fronthaul
+    \item Compared per-user uplink spectral efficiency against three baselines: ideal (perfect) fronthaul, WDM-aided A-RoF over single-mode fiber, and 1-bit (fully digitized) radio-over-fiber
+    \item Showed centralized A-RoMMF fronthaul achieves per-user uplink spectral efficiency close to the ideal-fronthaul bound, and outperforms both WDM-SMF A-RoF and 1-bit RoF, which suffers a severe SE penalty from coarse quantization
+\end{itemize}
+\textit{Related Publication: }
+\begin{itemize}
+    \item [J3] "Cell-free massive MIMO aided by analog radio-over-multimode fiber," in preparation for IEEE Trans. Wireless Commun., 2026
+\end{itemize}
+}
+
+\cventry{Ongoing}{A-RoF and Hybrid Beamforming}{}{}{}{
+\textit{Supervisor: }Prof. Robert W. Heath Jr.\\
+\textit{Motivation: }A WDM-based A-RoF fronthaul carries each precoded baseband stream on its own wavelength over single-mode fiber to the radio unit, where hybrid beamforming is applied. Because the optical path introduces its own wavelength-dependent phase shifts and temperature-sensitive chromatic dispersion, the fiber link itself can distort the array response used for beamforming. This project examines how much of that distortion actually degrades system performance, and designs a hybrid beamforming scheme that accounts for it.\\
+\textit{Work: }
+\begin{itemize}
+    \item Modeled a WDM-based A-RoF fronthaul architecture, with baseband-precoded streams electrical-to-optical converted onto separate wavelength channels over single-mode fiber and recombined at the radio unit for hybrid beamforming
+    \item Characterized the phase shift between WDM channels due to wavelength spacing and its effect on the array factor, finding that WDM phase shift alone does not significantly impact system performance
+    \item Modeled the shift in fiber chromatic dispersion with temperature and its effect on the beamforming array pattern, showing that temperature changes in the fiber distort the array response and require periodic recalibration
+    \item Proposed an ADMM-based hybrid beamforming design for A-RoF (A-RoF ADMM) and benchmarked its spectral efficiency across SNR against fully digital beamforming, standard ADMM hybrid beamforming, and an ideal (drift-free) RoF ADMM baseline
+    \item Showed that temperature drift in the A-RoF fronthaul -- not the WDM phase shift -- is the dominant factor behind the spectral-efficiency gap versus fully digital beamforming
+\end{itemize}
+}
+
+\cventry{2024 -- 2026}{Power Consumption \& Spectral Efficiency of Uplink Analog Radio-over-Fiber}{}{}{}{
+\textit{Supervisor: }Prof. Robert W. Heath Jr. · with Dr. Miguel Rodrigo Castellanos\\
+\textit{Motivation: }Radio-over-fiber centralizes radio access networks over a low-loss optical link between the remote radio head and the central unit. Analog radio-over-fiber (A-RoF) transmits RF signals directly on an optical carrier, avoiding digitization at the remote radio head and shifting power-hungry processing to the baseband unit. Prior comparisons of A-RoF against digital fronthaul relied on simplified, linearized optical models and did not account for fiber nonlinear interference or noise propagation -- this work builds an analytical framework that does.\\
+\textit{Work: }
+\begin{itemize}
+    \item Developed a general discrete-time input--output model for the combined optical-wireless uplink channel, capturing chromatic dispersion, electrical-to-optical conversion loss, amplification noise, and fiber nonlinear interference alongside wireless path loss and fading
+    \item Derived the mutual information between the transmitted UE signal and the received BBU signal to compare A-RoF against DSP-assisted A-RoF and digital receivers, and to quantify the performance loss from quantization at low-resolution ADCs
+    \item Modeled system power consumption -- noise from the RF receiver, and power loss from E/O conversion and amplification -- showing A-RoF achieves higher energy efficiency than 8- and 16-bit digital receivers and DSP-assisted A-RoF, despite being more sensitive to nonlinear interference
+    \item Characterized trade-offs among transmit power, nonlinear interference, and spectral efficiency, identifying the linear operating regions where A-RoF is most effective for uplink wireless communication
+\end{itemize}
+\textit{Related Publication: }
+\begin{itemize}
+    \item [J2] S. Amir, M. R. Castellanos, and R. W. Heath, "Power consumption and spectral efficiency analysis for uplink analog radio-over-fiber," submitted to IEEE J. Lightw. Technol. [Online]. Available: \url{https://arxiv.org/abs/2606.01411}
+\end{itemize}
+}
+
+\cventry{Jan 2023 -- Oct 2023}{Empowering Large Arrays from Electromagnetics and Optics}{}{}{}{
+\textit{Supervisor: }Prof. Robert W. Heath Jr.\\
+\textit{Motivation: }Explored more efficient radio-over-fiber solutions that reduce complexity and power consumption while improving scalability, and worked to enhance digital RoF performance by optimizing signal processing and MIMO models for higher data rates and reliability.\\
+\textit{Work: }
+\begin{itemize}
+    \item Reviewed alternative analog radio-over-fiber solutions to existing CPRI/eCPRI architecture
+    \item Reviewed signal processing algorithms and MIMO models for digital radio-over-fiber architectures
+    \item Presented findings at BWAC meetings, Spring and Fall 2023
+\end{itemize}
+}
+
+\cventry{May 2022 -- Jul 2023}{Distributed Joint Communication and Radar Utilizing 5G Waveform}{}{}{}{
+\textit{Supervisor: }Prof. Robert W. Heath Jr.\\
+\textit{Motivation: }Adaptive awareness of vehicles on the road enables more efficient design and execution of applications like cruise control. In a joint multi-node scenario, where vehicles communicate directly without relying on a central unit, each node becomes fully aware of its surroundings, enhancing overall system responsiveness and safety.\\
+\textit{Work: }
+\begin{itemize}
+    \item Proposed a distributed vehicular JCR feedback model for target localization
+    \item Developed a JCR transceiver that utilizes the 5G SSB for target detection and localization
+\end{itemize}
+\textit{Related Publication: }
+\begin{itemize}
+    \item [C2] "Multi-node joint communication and radar using synchronization signals in 5G," Proc. IEEE CAMSAP, Herradura, Costa Rica, Dec. 2023
+\end{itemize}
+}
+
+\cventry{Aug 2020 -- May 2021}{Multiple Person Breathing Rate Estimation Using RFID}{}{}{}{
+\textit{Supervisors: }Dr. Momin Ayub Uppal, Dr. Muhammad Tahir\\
+\textit{Motivation: }Contactless and non-invasive breath monitoring applications are becoming necessary. Given the pandemic, the need increased tenfold. Utilizing commercial off-the-shelf RFID readers, we can achieve this goal.\\
+\textit{Work: }
+\begin{itemize}
+    \item Used Impinj's low-level reader protocol toolkit to extract raw phase and RSSI values
+    \item Created different datasets for a user in different environments, such as stationary or moving users, and multiple users
+    \item Removed phase jumps and noise from the phase data to extract a clean breathing signal to estimate the breathing rate
+\end{itemize}
+}
+
+\cventry{Jan 2020 -- May 2021}{Dynamic Equivalent Circuit Modeling for Li-ion Battery State-of-Health}{}{}{}{
+\textit{Supervisors: }Dr. Ijaz Haider Naqvi, Prof. Nauman Ahmad Zaffar\\
+\textit{Motivation: }As Electric Vehicles gain popularity, the demand for efficient battery management systems (BMS) is increasing. To build a reliable BMS we need to effectively quantify the degradation due to ageing and remaining useful life.\\
+\textit{Work: }
+\begin{itemize}
+    \item Modeled lithium-ion batteries using an equivalent circuit model fit to the provided dataset
+    \item Used curve-fitting tools to approximate the State-of-Health (SOH) of a lithium-ion battery
+    \item Developed a novel 2-RC equivalent circuit model for SOH estimation with improved accuracy and lower computational cost than existing models; extended to multi-RC modeling, showing the 2-RC model achieves a global minimum
+\end{itemize}
+\textit{Related Publication: }
+\begin{itemize}
+    \item S. Amir, M. Gulzar, M. O. Tarar, I. H. Naqvi, N. A. Zaffar, and M. G. Pecht, "Dynamic Equivalent Circuit Model to Estimate State-of-Health of Lithium-Ion Batteries," IEEE Access, vol. 10, pp. 18279--18288, 2022
+\end{itemize}
+}
+
+
+\section{Side Projects}
+
+\cventry{Aug 2023 -- Dec 2023}{UAV Tracking Using 5G-V2X Joint Communication and Radar}{}{}{}{
+\textit{Motivation: }3GPP introduced 5G-V2X to improve road safety and traffic management in Intelligent Transportation Systems (ITS). In Ultra-Dense Networks (UDNs), tracking vehicular user equipment (VUE) is crucial, especially in dense urban environments where Roadside Units (RSUs) ensure constant line-of-sight, allowing accurate tracking even without GPS, enhanced by 5G's MIMO and beamforming capabilities.\\
+\textit{Work: }
+\begin{itemize}
+    \item Developed simulations for localizing moving targets using an extended Kalman filter
+    \item Designed the simulation environment with distributed MIMO stations following the METIS channel model
+\end{itemize}
+}
+
+\cventry{Aug 2022 -- Dec 2022}{Maximally Flat Microstrip Bandpass Filter Design Using AWR}{}{}{}{
+\textit{Motivation: }The goal of this project is to design a 10 GHz maximally flat Butterworth bandpass filter using microstrip technology with a 3 dB bandwidth of 40 MHz and 50~$\Omega$ source/load resistance. The design uses lossy elements, tuned to minimize insertion loss, with coupled microstrips to achieve optimal performance.\\
+\textit{Work: }
+\begin{itemize}
+    \item Designed a basic lumped circuit element and then modeled it into transmission line stubs to microstrip elements
+\end{itemize}
+}
+
+\cventry{Jan 2022 -- May 2022}{Target Localization Using Joint Communication and Sensing (IEEE 802.11ad)}{}{}{}{
+\textit{Work: }
+\begin{itemize}
+    \item Investigated the IEEE 802.11ad waveform for sensing stationary and moving targets at a fixed distance
+\end{itemize}
+}
+
+\cventry{}{Unsupervised Abnormality Detection in Intelligent, Heterogeneous Autonomous Systems}{}{}{}{
+\textit{Supervisor: }Dr. Zubair Khalid\\
+\textit{Motivation: }Automatic anomaly detection in autonomous systems is a key challenge that can open different negotiation between autonomous systems in the future.\\
+\textit{Work: }
+\begin{itemize}
+    \item Analysis and pre-processing of time series ROS Bag Dataset
+    \item GP Regression model to predict the time series data and detect any anomaly present
+\end{itemize}
+}
+
+\cventry{}{Kitchen Recycling Robot}{}{}{}{
+\textit{Supervisor: }Dr. Mohammad Jahangir Ikram\\
+\textit{Motivation: }Designed a path-following robot for the \href{https://www.nerc.com.pk/?AspxAutoDetectCookieSupport=1}{National Engineering and Robotics Competition} that simulates real-life kitchen recycling. The contest revolves around the development of an Arduino-processor-driven robot capable of pattern reading and boundary detection.\\
+\textit{Work: }
+\begin{itemize}
+    \item Created a design layout for the robot arm, PCB, and feeding station
+    \item Interfaced sensors -- IMU, IR, and ultrasound -- to Arduino
+    \item Collected sensor data and implemented a feedback loop that kept the robot following a set path
+\end{itemize}
+\textit{Tools, Framework \& Hardware: }Arduino, C/C++, Proteus\\
+\textit{Awards/Recognition: }Won the Best Engineering Design Award at the end of the event
+}
+
+\cventry{}{Microcontroller Based Laser Engraver}{Microcontroller and Interfacing Lab Project}{}{}{
+\begin{itemize}
+    \item Designed a microcontroller-based engraver
+    \item The device takes a monochromatic image as input and, based on pixel information, engraves the print onto a wooden surface using a laser
+\end{itemize}
+\textit{Tools, Framework \& Hardware: }MikroC, MPLAB, Proteus
+}
+
+
+\section{Publications}
+
+\textbf{Journal}
+\begin{itemize}
+    \item [J1] \textbf{S. Amir}, M. R. Castellanos, and R. W. Heath, "Performance analysis of uplink analog radio-over-multimode fiber," submitted to \textit{IEEE Open J. Commun. Soc.}, 2026.
+    \item [J2] \textbf{S. Amir}, M. R. Castellanos, and R. W. Heath, "Power consumption and spectral efficiency analysis for uplink analog radio-over-fiber," submitted to \textit{IEEE J. Lightw. Technol.} [Online]. Available: \url{https://arxiv.org/abs/2606.01411}
+    \item [J3] \textbf{S. Amir} and R. W. Heath, "Cell-free massive MIMO aided by analog radio-over-multimode fiber," in preparation for submission to \textit{IEEE Trans. Wireless Commun.}, 2026.
+\end{itemize}
+
+\textbf{Conference Proceedings}
+\begin{itemize}
+    \item [C1] \textbf{S. Amir}, M. R. Castellanos, Y.-H. Nam, and R. W. Heath, "Analog radio-over-multimode fiber: A spectral efficiency perspective," in \textit{Proc. IEEE Int. Conf. Commun. (ICC)}, Montreal, QC, Canada, Jun. 2025.
+    \item [C2] \textbf{S. Amir}, M. R. Castellanos, and R. W. Heath, "Multi-node joint communication and radar using synchronization signals in 5G," in \textit{Proc. IEEE Int. Workshop Comput. Adv. Multi-Sensor Adaptive Process. (CAMSAP)}, Herradura, Costa Rica, Dec. 2023.
+\end{itemize}
+
+\textbf{Other}
+\begin{itemize}
+    \item \textbf{S. Amir}, M. Gulzar, M. O. Tarar, I. H. Naqvi, N. A. Zaffar, and M. G. Pecht, "Dynamic Equivalent Circuit Model to Estimate State-of-Health of Lithium-Ion Batteries," \textit{IEEE Access}, vol. 10, pp. 18279--18288, 2022.
+\end{itemize}
+
+
+\section{Certifications}
+Natural Language Processing with Classification \& Vector Spaces by DeepLearning.ai
+
+
+
+\section{Extra Curricular \& Leadership Role}
+\begin{itemize}
+    \item \textbf{\href{https://www.facebook.com/sportsatlums/photos/3004363542935202}{Vice President Training and Development} - \href{https://slums.lums.edu.pk/}{Sports at LUMS}}
+    \item \textbf{Vice Captain - \href{https://www.instagram.com/lumsnetballteam/}{LUMS Netball Team}}
+    \item \textbf{General Secretary - Alpha Society LUMS}
+    \item \textbf{Represented LUMS in \href{https://www.khilari.com.pk/news/6850/19th-national-netball-championship-from-today}{19th National Netball Championship}}
+    \item \textbf{Director Media and Promotions - \href{https://www.facebook.com/LUMS.sportsfest}{LUMS Sports Fest 2020}}
+\end{itemize}
+
+
+%-----       letter       ---------------------------------------------------------
+
+\end{document}
+
+
+%% end of file `template.tex'.
